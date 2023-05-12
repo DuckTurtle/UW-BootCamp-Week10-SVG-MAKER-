@@ -11,7 +11,7 @@ I created this project inorder to make quick and simple logos. The main focus of
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
-- [contribute](#How to Contribute)
+- [Contribute](#How to Contribute)
 - [Tests](#Tests)
 - [Questions](#Questions)
 
@@ -23,7 +23,7 @@ To use this project please install inquirer@8.2.4, jest, and nodejs to your cons
 
 This project has one function. After installing the required items, run the index.js file using node, answer the prompts, and enjoy your simple logo. To view the logo, paste the file path into your prefred broswer.
 
-![example logo.](./assets/images/svg.JPG);
+![example logo.](./assets/images/svg.JPG)
  example video: https://youtu.be/_p63h_J_--g 
 ## License
 
