@@ -46,7 +46,7 @@ const questions = async () => {
 // TODO: runs on oppen
 function init() {
     questions()
-        // sends the code to the other js file then creates readme.
+        // sends the code to the other js file then creates svg.
         .then((answers) => {
             
             const generateSVG =  generateMarkdown(answers);

@@ -1,3 +1,4 @@
+// returns svg code for shape
 const setShape = (shape, shapeColor) => {
   console.log(shape);
   if (shape === 'circle') {
@@ -11,7 +12,7 @@ const setShape = (shape, shapeColor) => {
   }
 };
 
-
+// generates the svg
 function generateMarkdown({ shape, shapeColor, textColor, title }) {
   //skeltion for the read me file 
   return `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
