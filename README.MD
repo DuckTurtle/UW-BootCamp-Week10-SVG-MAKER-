@@ -11,7 +11,7 @@ I created this project inorder to make quick and simple logos. The main focus of
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
-- [Contribute](#How to Contribute)
+- [How to Contribute](#How to Contribute)
 - [Tests](#Tests)
 - [Questions](#Questions)
 
