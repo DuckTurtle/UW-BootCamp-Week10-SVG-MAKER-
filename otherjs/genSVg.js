@@ -1,14 +1,31 @@
+const {Circle,Triangle,Square} = require('./shape.js')
 // returns svg code for shape
 const setShape = (shape, shapeColor) => {
-  console.log(shape);
+  console.log(shapeColor);
+  let sharp;
+  switch (shape){
+    case "circle":
+   sharp = new Circle(shapeColor);
+   break;
+
+   case "triangle":
+   sharp =  new Triangle(shapeColor);
+   break;
+
+   case "square":
+   sharp =  new Square(shapeColor);
+   break;
+  }
+ 
   if (shape === 'circle') {
-    return `<circle cx="150" cy="100" r="80" fill="${shapeColor}" />`
+    return (sharp.render());
   }
+  
   else if (shape === 'triangle') {
-    return `<polygon points="150 5, 250 200, 50 200" fill="${shapeColor}" />`
+    return (sharp.render());
   }
-  else {
-    return `<rect x="50" y="20" width="200" height="175" fill="${shapeColor}" />`
+  else if (shape === 'square') {
+    return (sharp.render());
   }
 };
 
