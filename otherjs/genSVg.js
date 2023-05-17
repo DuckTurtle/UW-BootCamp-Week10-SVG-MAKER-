@@ -1,26 +1,26 @@
-const {Circle,Triangle,Square} = require('./shape.js')
+const { Circle, Triangle, Square } = require('./shape.js')
 // returns svg code for shape
 const setShape = (shape, shapeColor) => {
-  console.log(shapeColor);
+  // calls the class inorder to get render to work.
   let sharp;
-  switch (shape){
+  switch (shape) {
     case "circle":
-   sharp = new Circle(shapeColor);
-   break;
+      sharp = new Circle(shapeColor);
+      break;
 
-   case "triangle":
-   sharp =  new Triangle(shapeColor);
-   break;
+    case "triangle":
+      sharp = new Triangle(shapeColor);
+      break;
 
-   case "square":
-   sharp =  new Square(shapeColor);
-   break;
+    case "square":
+      sharp = new Square(shapeColor);
+      break;
   }
- 
+// grabs the proper render.
   if (shape === 'circle') {
     return (sharp.render());
   }
-  
+
   else if (shape === 'triangle') {
     return (sharp.render());
   }
@@ -38,4 +38,4 @@ ${setShape(shape, shapeColor)}
 </svg>`
 }
 
-module.exports = {setShape,generateMarkdown};
+module.exports = { setShape, generateMarkdown };
